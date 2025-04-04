@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: url('https://i.pinimg.com/736x/9c/f5/b6/9cf5b64d6cd2963ef96eabb4b2c1cbe6.jpg') no-repeat center center fixed;
+            background: url('https://images6.alphacoders.com/137/thumb-1920-1373668.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: black;
             margin: 0;
@@ -173,11 +173,11 @@
         }
 
         function createResultBox(title, numbers, colorClass) {
-            return <div class="result-box">
+            return `<div class="result-box">
                         <div class="title">${title}</div>
                         <p class="${colorClass}">${numbers.join('<br>')}</p>
                         <button class="copy-btn" onclick="copyToClipboard('${numbers.join('-')}')">คัดลอก</button>
-                    </div>;
+                    </div>`;
         }
 
         function getCombinations(array, size) {
